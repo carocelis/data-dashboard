@@ -1,45 +1,98 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
-  </head>
-  <body>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <header>
-      <nav>
-        <div class="logo"><img src="assets/images/logo-laboratoria.svg" class="logo-laboratoria"></div> 
+</head>
 
-        <div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
-      </nav>
+<body>
+<header>
+  <nav class="horizonral">
+    <div class="brand">
+      <img src="assets/images/logo-laboratoria.svg">      
+    </div>
 
-    
-      <div class="menu">
-        <h1> SANTIAGO DE CHILE 2017 - II
-        <i class="fa fa-sort-desc" aria-hidden="true"></i>
-        </h1> 
+    <div class="saludo">
+      <p class="saludo"><b>Hola</b>, Valentina <p>      
+    </div>
 
-        <ul>
-          <li> ESTADISTICAS </li>
-          <li> ESTUDIANTES </li>
-          <li> TEACHERS</li>
+    <div class="profile">
+      <img src="assets/images/valentina.jpg" class="valentina">
+    </div>
+
+    <div class="msj">
+      <a href="#"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </a>
+    </div>
+
+    <div class="logout">
+      <a href="#"><p class="logout">Logout</p>
+      <i class="fa fa-power-off" aria-hidden="true"></i></a>
+    </div>
+  </nav>
+</header>
+
+  <nav class="vertical">
+    <ul class="menuvertical">
+    <li class="listavertical"> <a href="#">
+     <i class="fa fa-home" aria-hidden="true"></i>
+    <br> Dashboard </a></li>
+
+    <li class="listavertical"> <a href="#">
+     <i class="fa fa-graduation-cap" aria-hidden="true"></i> 
+    <br> Add Students </a></li>
+
+    <li class="listavertical"> <a href="#">
+     <i class="fa fa-trash" aria-hidden="true"></i>
+    <br> Remove Students </a></li>
+
+    <li class="listavertical"> <a href="#">
+     <i class="fa fa-plus" aria-hidden="true"></i>
+    <br> Add Sprint </a></li>
+    </ul>
+  </nav>
+
+<section id="container">
+  <div>
+    <h1>Dashboard SCL 2017 - 2PM 
+    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+    </h1>
+  </div>
+
+  <div class="menu-local">
+    <ul class="local">
+          <li class="listalocal"> <a class="a2" href="#"> Overview </a></li>
+          <li class="listalocal"> <a class="a2" href="#">Students </a></li>
+          <li class="listalocal"> <a class="a2" href="#">Teachers </a></li>
         </ul>   
-      </div>
+    </div>
 
-  </header>
+    <!--Div grafico 1-->
+    <div id="barchart_values"></div>
+  
+    <!--Div grafico 2-->
+     <div id="chart_div"> </div>
 
-  <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
+    <!--Div grafico 3-->
+    <div id="chart_div2"> </div>
+
+    <!--Div grafico 4-->
+    <div id="chart_div3"> </div>
+
+
+</section>
+
+
 
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>  
+    <script src="js/app.js"></script>  
 
   </body>
 </html>
