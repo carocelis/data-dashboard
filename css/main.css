@@ -2,7 +2,7 @@
  * Hola este es un comentario random de prueba
  */
 
- html, body {
+html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -14,15 +14,18 @@
 header {
 	width: 100%;
 	height: 70px;
-	background-color: #ffffff;
 	padding: 0;
 	margin: 0;
+	background-color: #ffffff;
+	position: fixed;
+	z-index: 10;
 } 
 
 .horizontal {
 	margin: 0;
 	padding: 0;
-	float: left;	
+	float: left;
+	background-color: #ffffff;
 }
 
 .brand{
@@ -87,9 +90,11 @@ a{
 	background-color: #ffc107;
 	display: inline-block;
 	width: 15%;
-	height: 100%;
+	height: 224.5%;
 	float: left;
 	font-size: 16px;
+	padding: 100px 0 0 0;
+
 }
 
 .menuvertical{
@@ -100,6 +105,7 @@ a{
 	text-align: center;
 	background-color: #ffc107;
 	display: inline-block;
+	position: fixed;
 }
 
 .listavertical{
@@ -117,7 +123,7 @@ i.fa.fa-graduation-cap, i.fa.fa-trash, i.fa.fa-plus{
 li a{
 	display: block;
 	text-decoration: none;
-	color: #000000;
+	color: rgba(0, 0, 0, 0.80);
 }
 
 li a:hover{ 
@@ -127,10 +133,12 @@ li a:hover{
 
 
 /*CONTENIDO*/
+
 #container{
 	background-color: #ecebeb;
 	float: left;
 	width: 85%;
+	padding: 100px 0 0 0;
 }
 
 h1{
@@ -169,39 +177,351 @@ li .a2:hover{
 }
 
 
-/*GRAFICOS*/
+/*GRAFICO*/
+
+
+/*Atributo comun*/
+div.parrafo{
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+h4{
+	display: inline-block;
+	margin: 0px;
+}
+
+
+/*1*/
+
+div.grafico1{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 0 15px;
+	z-index: 5; 
+	text-align: center;
+}
+
+
+#info1{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
+}
+
+.pgraficos{
+	box-sizing: border-box;
+	margin: 0px;
+	font-size: 12px;
+}
+
+h3{
+	display: inline-block;
+	margin: 0px;
+}
+
 #barchart_values{
 	box-sizing: border-box;
-	width: 33%;
+	width: 100%;
 	height: auto;
 	display: inline-block;
-	padding: 5px 5px 5px 15px;
+	margin-top: 10px;	
+	z-index: 5; 
+}
+
+/*2*/
+
+div.grafico2{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 0 5px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info2{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
 }
 
 #chart_div{
 	box-sizing: border-box;
-	width: 33%;
+	width: 100%;
 	height: auto;
+	display: inline-block;
+	margin-top: 10px;
+	z-index: 5; 	
+}
+
+/*3*/
+div.grafico3{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 0 5px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info3{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
 	display: inline-block;
 	padding: 5px;
 }
 
 #chart_div2{
 	box-sizing: border-box;
-	width: 33%;
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	z-index: 5; 	
+}
+
+
+/*4*/
+
+div.grafico4{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 97.4%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 0 15px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info4{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
 	display: inline-block;
 	padding: 5px;
 }
 
 #chart_div3{
 	box-sizing: border-box;
-	width: 66.3%;
+	width: 67%;
 	height: auto;
 	display: inline-block;
-	padding: 5px 5px 5px 15px;
+	margin-top: 10px;	
+	float: left;
 }
+
+#donutchart{
+	box-sizing: border-box;
+	width: 33%;
+	margin-top: 10px;	
+	display: inline-block;
+}
+
+/*5*/
+
+div.grafico5{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 97.4%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 0 15px;
+	z-index: 5; 
+	text-align: center;
+
+}
+
+#info5{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
+}
+
+#donutchart2{
+	box-sizing: border-box;
+	width: 33%;
+	margin-top: 10px;
+	display: inline-block;
+	float: left;
+}
+
+#chart_div4{
+	box-sizing: border-box;
+	width: 67%;
+	height: auto;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+/*6*/
+
+div.grafico6{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 20px 15px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info6{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
+}
+
+#chart_div5{
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-top: 10px;	
+}
+
+/*7*/
+
+div.grafico7{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 20px 5px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info7{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
+}
+
+#chart_div6{
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-top: 10px;	
+}
+
+/*8*/
+div.grafico8{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 32%;
+	height: 320px;
+	background-color: #F6F6F6;
+	margin: 20px 0 20px 5px;
+	z-index: 5; 
+	text-align: center;
+}
+
+#info8{
+	box-sizing: border-box;
+	margin: 10px;
+	text-align: center;
+	background-color: #ecebeb;
+	display: inline-block;
+	padding: 5px;
+}
+
+#chart_div7{
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	margin-top: 10px;	
+}
+
+#container2, #container3 {
+	display: none;
+}
+
+/*----------------------FIN PARTE 1-------------------------------------*/
+
+.Specialización{
+	text-align: center;
+	background: #F6F6F6;
+	height: 100%
+}
+
+h5{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+li.a3{
+	display: block;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	font-weight: 300;
+}
+
+.check {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ffc107;
+    display: inline-block;
+    border-radius: 3px;
+    margin-right: 3px;
+    vertical-align: -2px;
+}
+
+ul{
+	margin: 0px;
+}
+
+.fa-search{
+	background-color: #ffffff;
+	display: inline-block;
+	margin-right: -3px;
+	padding: 5px 10px 6px 10px;
+	vertical-align: middle;
+}
+
 /*#divBoton{
 	background-color: red;
 	position: relative;
 	width: 20%;
 }*/
+
+
+input {
+	width: 35%;
+	outline: none;
+    border: none;
+    height: 25px;
+    display: inline-block;
+}
+

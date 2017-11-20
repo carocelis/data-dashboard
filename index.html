@@ -58,7 +58,11 @@
   </nav>
 
 <section id="container">
+
   <div id="contenedor">
+
+  <div> 
+
     <h1>Dashboard SCL 2017 - 2PM 
     <button id="boton" onclick="add()">
       <i class="fa fa-sort-desc" aria-hidden="true"></i>
@@ -68,27 +72,199 @@
 
   <div class="menu-local">
     <ul class="local">
-          <li class="listalocal"> <a class="a2" href="#"> Overview </a></li>
-          <li class="listalocal"> <a class="a2" href="#">Students </a></li>
-          <li class="listalocal"> <a class="a2" href="#">Teachers </a></li>
+          <li class="listalocal" id="overview"> <a class="a2" href="#"> Overview </a></li>
+          <li class="listalocal" id="students"> <a class="a2" href="#">Students </a></li>
+          <li class="listalocal" id="teachers"> <a class="a2" href="#">Teachers </a></li>
         </ul>   
     </div>
 
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+  <section id="container1">
     <!--Div grafico 1-->
-    <div id="barchart_values"></div>
-  
+    <div class="grafico1"> 
+      <div class="parrafo">
+        <h4>Enrollment</h4>
+      </div>
+
+    <div id="info1">
+      <h3>120</h3>
+      <p class="pgraficos"> Students Currently <br> Enrolled</p>
+    </div>
+
+    <div id="info1">
+      <h3>20%</h3>
+      <p class="pgraficos"> % Dropout <br><br></p>
+    </div>
+
+      <div id="barchart_values"></div>
+    </div> 
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+   
     <!--Div grafico 2-->
-     <div id="chart_div"> </div>
+    <div class="grafico2"> 
+      <div class="parrafo">
+        <h4>Archievement</h4>
+      </div>
+
+    <div id="info2">
+      <h3>105</h3>
+      <p class="pgraficos"> Students That Meet <br> The Target</p>
+    </div>
+
+    <div id="info2">
+      <h3>78%</h3>
+      <p class="pgraficos"> % Of Total (135) <br><br></p>
+    </div>
+
+      <div id="chart_div"> </div>
+    </div> 
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
 
     <!--Div grafico 3-->
-    <div id="chart_div2"> </div>
+    <div class="grafico3">
+      <div class="parrafo">
+        <h4>Net Promoter Score</h4>
+      </div>    
+
+    <div id="info3">
+      <h3>78%</h3>
+      <p class="pgraficos"> %Acumulative <br> NPS <br></p>
+    </div>
+
+    <div id="info3">
+      <p class="pgraficos" align="left"> 60% Promoters<br> 30% Passive <br> 10% Detractors</p>
+    </div>
+
+     <div id="chart_div2"> </div>
+    </div> 
+   
+<!-- //////////////////////////////////////////////////////////////////////// -->
 
     <!--Div grafico 4-->
-    <div id="chart_div3"> </div>
+    <div class="grafico4">
+      <div class="parrafo">
+        <h4>Tech Skills</h4>
+      </div> 
 
+    <div id="info4">
+      <h3>90</h3>
+      <p class="pgraficos"> Students That Meet <br> The Target</p>
+    </div>
 
+    <div id="info4">
+      <h3>62</h3>
+      <p class="pgraficos"> % Of Total (135) <br><br></p>
+    </div>
+
+    <!--Div grafico 4.1-->
+     <div>
+     <div id="chart_div3"> </div>
+    <!--Div grafico 4.2-->
+     <div id="donutchart"> </div>
+     </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!--Div grafico 5-->    
+    <div class="grafico5">
+      <div class="parrafo">
+        <h4>Life Skills</h4>
+      </div>     
+
+    <div id="info5">
+      <h3>80</h3>
+      <p class="pgraficos"> Students That Meet <br> The Target</p>
+    </div>
+
+    <div id="info5">
+      <h3>62</h3>
+      <p class="pgraficos"> % Of Total (135) <br><br></p>
+    </div>
+
+    <!--Div grafico 5.1-->
+    <div></div>
+     <div id="donutchart2"> </div>
+    <!--Div grafico 5.2-->
+     <div id="chart_div4"> </div>
+    </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!--Div grafico 6-->
+    <div class="grafico6">
+      <div class="parrafo">
+        <h4>Students Satisfaction</h4>
+      </div>   
+
+    <div id="info6">
+      <h3>140</h3>
+      <p class="pgraficos"> % Meeting or exceeding<br> expectation (cumulative)</p>
+    </div>
+
+     <div id="chart_div5"> </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!--Div grafico 7-->
+    <div class="grafico7">
+      <div class="parrafo">
+        <h4>Teacher Rating</h4>
+      </div>
+
+    <div id="info7">
+      <h3>4.2</h3>
+      <p class="pgraficos"> Overall Teacher Rating <br> (cumulative)</p>
+    </div>
+
+     <div id="chart_div6"> </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+
+    <!--Div grafico 8-->
+    <div class="grafico8">
+      <div class="parrafo">
+        <h4>Jedi Master Rating</h4>
+      </div>  
+
+    <div id="info8">
+      <h3>50</h3>
+      <p class="pgraficos"> Overall Jedi Rating <br> (cumulative)</p>
+    </div>
+
+     <div id="chart_div7"> </div>
+    </div>
+<!-- //////////////////////////////////////////////////////////////////////// -->
+</section>
+</section>
+<!-- ///////////////////////// FIN PARTE 1 ////////////////////////////////// -->
+
+<section id="container2">
+  <div class="Specialización">
+      <ul class="menuSpecializacion">
+        <li class="a3"> <h5> SPECIALIZATION:</h5> </li>
+        <li class="a3"> <div class="check"></div> <span>Javascript</span> </li>
+        <li class="a3"> <div class="check"></div> <span>UX Design</span> </li>
+        <li class="a3"> <div class="check"></div> <span>Frontend Designer</span> </li>
+      </ul>
+  <div class="buscador">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input type="buscador">
+  </div>
+  </div>
 </section>
 
+
+
+<section id="container3">
+JEDIS
+</section>
 
 
 		<!-- Base de datos -->
