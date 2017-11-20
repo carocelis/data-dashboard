@@ -509,14 +509,25 @@ ul{
 	padding: 5px 10px 6px 10px;
 	vertical-align: middle;
 }
+/*Pestaña desplegable */
+#divBoton{
+	background-color: white;
+	/*z-index: 100;*/
+	width: 30%;
+	position: absolute;
+	bottom: 70%;
+}
 
-/*#divBoton{
-	background-color: red;
-	position: relative;
-	width: 20%;
-}*/
+#boton{
+	border: none;
+	display: inline-block;
+}
 
+#dashboard{
+	display: inline-block;
+}
 
+/*fin pestaña*/
 input {
 	width: 35%;
 	outline: none;

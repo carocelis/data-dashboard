@@ -214,42 +214,6 @@ console.log(data);
     }    
 
 
-// Pestaña desplegable
-//var boton = getElementById("boton");
-function add(){
-	
-	var contenedor = getElementById("container");
-	//var divBoton = document.createElement("div");
-	//divBoton.setAttribute("id", "divBoton");
-	var parrafo = document.createElement("p");
-	var prueba = document.createTextNode("prueba");
-	parrafo.appendChild(prueba);
-	contenedor.appendChild(parrafo);
-	//contenedor.appendChild(divBoton);
-	
-}
-      
-
-
-
-
-var acumulador1 = 0;
-for (var i = 0; i < data.SCL['2017-2'].students.length; i++) {
-	if(data.SCL['2017-2'].students[i].active === true){
-		acumulador1 += data.SCL['2017-2'].students[i].active;
-		/*document.write(acumulador1);*/
-	}
-}
-var grafico1 = document.getElementById("barchart_values");
-var divGraf1 = document.createElement("div")
-var span = document.createElement("p");
-var texto = document.createTextNode(acumulador1 + " son las alumnas activas actualmente");
-
-span.appendChild(texto);
-divGraf1.appendChild(span);
-grafico1.appendChild(divGraf1);
-
-
 
   //GRAFICO 6//  
      google.charts.load('current', {'packages':['corechart']});
@@ -317,3 +281,76 @@ grafico1.appendChild(divGraf1);
         chart.draw(data, options);
       }
 
+
+
+// Pestaña desplegable
+//var boton = getElementById("boton");
+function add(){
+	
+	var contenedor = document.getElementById("container");
+	var divBoton = document.createElement("div");
+	divBoton.setAttribute("id", "divBoton");
+	var parrafo = document.createElement("p");
+	var prueba = document.createTextNode("prueba");
+	parrafo.appendChild(prueba);
+	divBoton.appendChild(parrafo);
+	contenedor.appendChild(divBoton);
+	
+}
+
+//LLAMAR A LA DATA
+//Gráfico 1      
+
+var acumulador1 = 0;
+for(var i = 0; i < data.SCL['2017-2'].students.length; i++) {
+	if(data.SCL['2017-2'].students[i].active === true){
+		acumulador1 += data.SCL['2017-2'].students[i].active;
+	}
+}
+var info1 = document.getElementById("info1");
+var h31 = document.getElementById("h31");
+var parr1 = document.getElementById("parr1");
+var texto1 = document.createTextNode(acumulador1);
+
+h31.appendChild(texto1);
+
+
+//Gráfico 2
+
+var acumulador2 = 0;
+for(var i = 0; i < data.SCL['2017-2'].ratings.length; i++){
+	acumulador2 += data.SCL['2017-2'].ratings[i].student.supera;
+}
+
+var info2 = document.getElementById("info2");
+var h32 = document.getElementById("h32");
+var parr2 = document.getElementById("parr2");
+var texto2 = document.createTextNode(acumulador2);
+
+h32.appendChild(texto2);
+
+
+//Gráfico 3
+var promotoras = 0;
+var pasivas = 0;
+var detractoras = 0;
+
+for(var i = 0; i < data.SCL['2017-2'].ratings.length; i++){
+	promotoras += data.SCL['2017-2'].ratings[i].nps.promoters;
+	pasivas += data.SCL['2017-2'].ratings[i].nps.passive;
+	detractoras += data.SCL['2017-2'].ratings[i].nps.detractors;
+	var total = promotoras + pasivas + detractoras;
+	var promoters = promotoras/total*100;
+	var passive = pasivas/total*100;
+	var detractors = detractoras/total*100;
+	var nps = promoters - detractors;
+	console.log(nps);
+}
+
+
+var info2 = document.getElementById("info2");
+var h32 = document.getElementById("h32");
+var parr2 = document.getElementById("parr2");
+var texto2 = document.createTextNode(acumulador2);
+
+h32.appendChild(texto2);
