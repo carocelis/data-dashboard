@@ -34,6 +34,8 @@ console.log(data);
       chart.draw(view, options);
   }
 
+
+
  //GRAFICO 2
   
      google.charts.load('current', {'packages':['corechart']});
@@ -56,6 +58,7 @@ console.log(data);
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
+
 
 
   //GRAFICO 3  
@@ -113,3 +116,40 @@ console.log(data);
       var chart = new google.visualization.ComboChart(document.getElementById('chart_div3'));
       chart.draw(data, options);
     }    
+
+// Pestaña desplegable
+//var boton = getElementById("boton");
+function add(){
+	
+	var contenedor = getElementById("container");
+	//var divBoton = document.createElement("div");
+	//divBoton.setAttribute("id", "divBoton");
+	var parrafo = document.createElement("p");
+	var prueba = document.createTextNode("prueba");
+	parrafo.appendChild(prueba);
+	contenedor.appendChild(parrafo);
+	//contenedor.appendChild(divBoton);
+	
+}
+      
+
+
+
+
+var acumulador1 = 0;
+for (var i = 0; i < data.SCL['2017-2'].students.length; i++) {
+	if(data.SCL['2017-2'].students[i].active === true){
+		acumulador1 += data.SCL['2017-2'].students[i].active;
+		/*document.write(acumulador1);*/
+	}
+}
+var grafico1 = document.getElementById("barchart_values");
+var divGraf1 = document.createElement("div")
+var span = document.createElement("p");
+var texto = document.createTextNode(acumulador1 + " son las alumnas activas actualmente");
+
+span.appendChild(texto);
+divGraf1.appendChild(span);
+grafico1.appendChild(divGraf1);
+
+
