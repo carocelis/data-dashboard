@@ -8,6 +8,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
+	background: #F6F6F6;
+
 } 
 
 /*MENU HORIZONTAL*/
@@ -90,7 +92,7 @@ a{
 	background-color: #ffc107;
 	display: inline-block;
 	width: 15%;
-	height: 224.5%;
+	height: 231%;
 	float: left;
 	font-size: 16px;
 	padding: 100px 0 0 0;
@@ -468,23 +470,29 @@ div.grafico8{
 
 /*----------------------FIN PARTE 1-------------------------------------*/
 
+section #container2{
+	background: #F6F6F6;
+	height: 300%;
+	width: 85%;
+}
+
 .Specialización{
 	text-align: center;
 	background: #F6F6F6;
-	height: 100%
 }
 
 h5{
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 900;
+	margin: 0px;
 }
 
 li.a3{
 	display: block;
 	text-decoration: none;
 	display: inline-block;
-	padding: 10px;
+	padding: 20px;
 	font-weight: 300;
 }
 
@@ -534,5 +542,81 @@ input {
     border: none;
     height: 25px;
     display: inline-block;
+}
+
+/*----------------------slider -------------------------------------*/
+.containerSlyder{
+	text-align: center;
+
+}
+
+.tituloPremiadas{
+		font-size: 25px;
+		color: #ffc107;
+		padding: 40px 0 0 0;
+		font-weight: 400;
+}
+
+.slider{
+            margin: 0 auto;
+            padding: 30px 30px 40px 30px;
+            width: 45%;
+            overflow:hidden;
+        }
+
+.mySlides {
+	display: inline-block;
+}
+
+/*----------------------FIN slider -------------------------------------*/
+/*----------------------Ficha Alumnas ----------------------------------*/
+
+.containerFicha{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.ficha{
+	box-sizing: border-box;
+	background-color: #ffffff;
+	display: inline-block;
+	width: 780px;
+	overflow: auto;
+	padding: 21px;
+	text-align: left;
+	border-bottom: solid 3px #ecebeb;
+	border-right: solid 3px #ecebeb;
+}
+
+.ficha-datos{
+	display: inline-block;
+	padding: 5px;
+}
+
+.img-students{
+	display: inline-block;
+	width: 123px;
+	height: auto;
+	float: left;
+}
+
+.nombre{
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.area{
+	box-sizing: border-box;
+}
+
+.pgraficos2{
+	padding: 0 20px;
+}
+
+.containerSkills{
+	display: inline-block;
+	float: right;
+
 }
 

@@ -1,4 +1,5 @@
 
+//Función click menu//
 var overview = document.getElementById("overview");
 var overviewContentainer = document.getElementById("container1");
 var students = document.getElementById("students");
@@ -23,6 +24,8 @@ teachers.onclick = function() {
     studentsContentainer.style.display = "none";
     teachersContentainer.style.display = "initial";
 }
+//Fin Función click menu//
+
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 console.log(data);
@@ -58,7 +61,9 @@ console.log(data);
 
 
 
- //GRAFICO 2
+
+
+  //GRAFICO 2
   
      google.charts.load('current', {'packages':['corechart']});
      google.charts.setOnLoadCallback(drawChart2);
@@ -130,8 +135,8 @@ console.log(data);
 
       var options = {
         colors: ["#352640", "#ffc107"],
-        vAxis: {title: 'Cups'},
-        hAxis: {title: 'Month'},
+        vAxis: {title: 'Qty Students'},
+        hAxis: {title: 'Sprints'},
         seriesType: 'bars',
         series: {1: {type: 'line'}}
       };
@@ -140,14 +145,14 @@ console.log(data);
       chart.draw(data, options);
     }    
 
-    //GRAFICO 4-2// 
+  //GRAFICO 4-2// 
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart4);
       function drawChart4() {
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Sleep',    7]
+          ['Students', 'percentage'],
+          ['That meet the target',     11],
+          ['That don´t meet the target',    7]
         ]);
 
         var options = {
@@ -160,14 +165,14 @@ console.log(data);
       }
 
 
-    //GRAFICO 5-1// 
+  //GRAFICO 5-1// 
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart5);
       function drawChart5() {
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Sleep',    7]
+          ['Students', 'percentage'],
+          ['That meet the target',     11],
+          ['That don´t meet the target',    7]
         ]);
 
         var options = {  
@@ -179,7 +184,7 @@ console.log(data);
         chart.draw(data, options);
       }
 
-    //GRAFICO 5-2//      
+  //GRAFICO 5-2//      
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawVisualization2);
 
@@ -203,8 +208,8 @@ console.log(data);
 
       var options = {
         colors: ["#352640", "#ffc107"],
-        vAxis: {title: 'Cups'},
-        hAxis: {title: 'Month'},
+        vAxis: {title: 'Qty Students'},
+        hAxis: {title: 'Sprints'},
         seriesType: 'bars',
         series: {1: {type: 'line'}}
       };
@@ -237,7 +242,7 @@ console.log(data);
         chart.draw(data, options);
       }
 
-    //GRAFICO 7//  
+  //GRAFICO 7//  
      google.charts.load('current', {'packages':['corechart']});
      google.charts.setOnLoadCallback(drawChart7);
 
@@ -259,7 +264,7 @@ console.log(data);
         chart.draw(data, options);
       }
 
-    //GRAFICO 8//  
+  //GRAFICO 8//  
      google.charts.load('current', {'packages':['corechart']});
      google.charts.setOnLoadCallback(drawChart8);
 
@@ -280,7 +285,6 @@ console.log(data);
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div7'));
         chart.draw(data, options);
       }
-
 
 
 // Pestaña desplegable
@@ -354,3 +358,22 @@ var parr2 = document.getElementById("parr2");
 var texto2 = document.createTextNode(acumulador2);
 
 h32.appendChild(texto2);
+
+//Funcion Slider// 
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+//Fin Funcion Slider// 
+
