@@ -59,10 +59,6 @@ console.log(data);
       chart.draw(view, options);
   }
 
-
-
-
-
   //GRAFICO 2
   
      google.charts.load('current', {'packages':['corechart']});
@@ -350,6 +346,7 @@ var parr3 = document.getElementById("parr3");
 var texto3 = document.createTextNode(nps + "%");
 
 h33.appendChild(texto3);
+
 
 //Funcion Slider// 
 var myIndex = 0;
