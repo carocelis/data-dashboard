@@ -285,8 +285,11 @@ console.log(data);
 
 // Pestaña desplegable
 function add(){
-	
 	document.getElementById("divBoton").style.visibility="visible";	
+	var container1 = document.getElementById("container1")
+	container1.addEventListener("click", function(){
+		document.getElementById("divBoton").style.visibility="hidden";
+	})
 }
 
 //LLAMAR A LA DATA
