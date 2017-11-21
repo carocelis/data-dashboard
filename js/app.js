@@ -288,18 +288,9 @@ console.log(data);
 
 
 // Pestaña desplegable
-//var boton = getElementById("boton");
 function add(){
 	
-	var contenedor = document.getElementById("container");
-	var divBoton = document.createElement("div");
-	divBoton.setAttribute("id", "divBoton");
-	var parrafo = document.createElement("p");
-	var prueba = document.createTextNode("prueba");
-	parrafo.appendChild(prueba);
-	divBoton.appendChild(parrafo);
-	contenedor.appendChild(divBoton);
-	
+	document.getElementById("divBoton").style.visibility="visible";	
 }
 
 //LLAMAR A LA DATA
@@ -309,14 +300,16 @@ var acumulador1 = 0;
 for(var i = 0; i < data.SCL['2017-2'].students.length; i++) {
 	if(data.SCL['2017-2'].students[i].active === true){
 		acumulador1 += data.SCL['2017-2'].students[i].active;
-	}
+	}	
 }
+
 var info1 = document.getElementById("info1");
 var h31 = document.getElementById("h31");
 var parr1 = document.getElementById("parr1");
 var texto1 = document.createTextNode(acumulador1);
 
 h31.appendChild(texto1);
+
 
 
 //Gráfico 2
@@ -348,16 +341,15 @@ for(var i = 0; i < data.SCL['2017-2'].ratings.length; i++){
 	var passive = pasivas/total*100;
 	var detractors = detractoras/total*100;
 	var nps = promoters - detractors;
-	console.log(nps);
 }
 
 
-var info2 = document.getElementById("info2");
-var h32 = document.getElementById("h32");
-var parr2 = document.getElementById("parr2");
-var texto2 = document.createTextNode(acumulador2);
+var info3 = document.getElementById("info3");
+var h33 = document.getElementById("h33");
+var parr3 = document.getElementById("parr3");
+var texto3 = document.createTextNode(nps + "%");
 
-h32.appendChild(texto2);
+h33.appendChild(texto3);
 
 //Funcion Slider// 
 var myIndex = 0;

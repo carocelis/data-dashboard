@@ -520,21 +520,37 @@ ul{
 /*Pestaña desplegable */
 #divBoton{
 	background-color: white;
-	/*z-index: 100;*/
-	width: 30%;
+	z-index: 50;
+	width: 25%;
 	position: absolute;
-	bottom: 70%;
+	left: 32%;
+	font-family: 'Lato', sans-serif;
 }
 
-#boton{
-	border: none;
-	display: inline-block;
+#divBoton h3{
+	margin-left: 5%;
+	margin-top: 3%;
 }
 
-#dashboard{
-	display: inline-block;
+#divBoton hr{
+	width: 75%;
+	margin-left: 2%;
+	border: 0.5px solid #ffc107;
 }
 
+.fa-square-o{
+	vertical-align: middle;
+	color: #ffc107;
+	margin: 2%;
+}
+
+.fa-square-o:hover{
+	background-color: #ffc107; 
+}
+
+.fa-sort-desc{
+	margin: 1%;
+}
 /*fin pestaña*/
 input {
 	width: 35%;
